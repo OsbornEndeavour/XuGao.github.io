@@ -1,0 +1,49 @@
+---
+layout: archive
+title: "Works"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my academic publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+<div class="works-intro" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 2rem; border-radius: 10px; margin: 2rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <h3 style="margin-top: 0; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">Welcome to My Works List</h3>
+  <p style="margin: 1rem 0; line-height: 1.6; color: #34495e; font-size: 1.1em;">
+    Here you can find a comprehensive collection of my academic work, research reports, thesis, and entrepreneurial projects. Each piece represents different aspects of my journey in research and innovation, showcasing my diverse skills and experiences.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+    <span style="background: #3498db; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9em;">Academic Papers</span>
+    <span style="background: #e74c3c; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9em;">Research Reports</span>
+    <span style="background: #f39c12; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9em;">Thesis</span>
+    <span style="background: #27ae60; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9em;">Entrepreneurship</span>
+  </div>
+</div>
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2 style="color: #2c3e50; border-left: 4px solid #3498db; padding-left: 1rem; margin: 2rem 0 1rem 0;">{{ category[1].title }}</h2><hr style="border: none; height: 2px; background: linear-gradient(90deg, #3498db, #e74c3c); margin: 0 0 2rem 0;" />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
+
+
