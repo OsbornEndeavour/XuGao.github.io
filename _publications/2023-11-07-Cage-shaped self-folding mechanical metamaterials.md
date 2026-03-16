@@ -50,5 +50,5 @@ Published in the prestigious International Journal of Solids and Structures, thi
 This work was conducted in collaboration with researchers from Tsinghua University, demonstrating the power of interdisciplinary collaboration in advancing materials science.
 
 ## About its Extension
-![Poster of Challenge Cup](/images/poster_cage.png)
+![Poster of Challenge Cup]({{ site.baseurl }}/images/poster_cage.png)
 - Fig：Poster of the extension in space for the Challenge Cup in Tsinghua University

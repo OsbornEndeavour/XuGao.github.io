@@ -43,4 +43,4 @@ I am especially drawn to research that goes beyond isolated models and moves tow
 I am particularly interested in opportunities at the intersection of intelligent interaction, multimodal AI, and next-generation immersive systems. I hope to contribute to research that combines strong technical implementation with meaningful real-world application.
 
 * **Email:** [osborngx348@163.com](mailto:osborngx348@163.com)
-* **CV:** [Download my CV](/files/cv.pdf)
+* **CV:** [Download my CV]({{ site.baseurl }}/files/cv.pdf)

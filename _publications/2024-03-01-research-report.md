@@ -29,8 +29,8 @@ Ordered Pt alloys (intermetallic catalysts) are promising for PEM fuel cells bec
 ---
 
 ## Poster for CCE Day
-![Poster for CCE DAY](/images/poster_MC.png)
+![Poster for CCE DAY]({{ site.baseurl }}/images/poster_MC.png)
 - Fig1：Overview of the work's pipeline and results.
 
-![Simulation Results](/images/MC_path.png)
+![Simulation Results]({{ site.baseurl }}/images/MC_path.png)
 - Fig2：Simulated energy variation with changed trinary atom.
